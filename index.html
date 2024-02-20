@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .p{
+        width: 30rem;
+        height: auto;
+        border: 2px solid black;
+        margin: 10rem auto;
+        display: flex;
+        justify-content: center;
+    }
+</style>
+<body>
+   <div class="p" id="colr">
+    <h1>DISCO</h1>
+   </div>
+   
+   <script>
+    color ='red'
+    function shuffleColor() {
+        if (color == 'red') color = 'green'
+        else if(color == 'green') color = 'blue'
+        else if(color == 'blue') color = 'red'
+        document.getElementById("colr").style.backgroundColor = color
+    }
+    setInterval(shuffleColor,1000)
+
+   </script>
+</body>
+</html>
